@@ -10,7 +10,7 @@ def line(katz)
       linee = linee + "#{place}. #{x} "
     end
 
-    linee
+    puts linee
   end
 end
 
