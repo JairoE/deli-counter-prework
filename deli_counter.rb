@@ -2,7 +2,7 @@ katz_deli = []
 
 def line(katz)
   if katz.size == 0
-    return "The line is currently empty."
+    puts "The line is currently empty."
   else
     linee = "The line is currently: "
     place = 1
@@ -17,7 +17,7 @@ end
 def take_a_number(katz, name)
   place = katz.size + 1
   katz.push(name)
-  return "Welcome #{name}. You are number #{place} in line."
+  puts "Welcome #{name}. You are number #{place} in line."
 end
 
 def now_serving(katz)
@@ -28,6 +28,3 @@ def now_serving(katz)
     puts "Currently serving #{now}"
   end
 end
-
-
-      
