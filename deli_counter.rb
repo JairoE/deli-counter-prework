@@ -7,8 +7,12 @@ def line(katz)
     linee = "The line is currently: "
     place = 1
     for x in katz
-      linee = linee + "#{place}. #{x} "
-      place +=1
+      if place == katz.size
+        linee = linee + "#{place}. #{x}"
+      else
+        linee = linee + "#{place}. #{x} "
+        place +=1
+      end
     end
 
     puts linee
