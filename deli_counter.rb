@@ -8,6 +8,7 @@ def line(katz)
     place = 1
     for x in katz
       linee = linee + "#{place}. #{x} "
+      place +=1
     end
 
     puts linee
@@ -17,7 +18,7 @@ end
 def take_a_number(katz, name)
   place = katz.size + 1
   katz.push(name)
-  puts "Welcome #{name}. You are number #{place} in line."
+  puts "Welcome, #{name}. You are number #{place} in line."
 end
 
 def now_serving(katz)
@@ -25,6 +26,6 @@ def now_serving(katz)
     puts "There is nobody waiting to be served!"
   else
     now = katz.shift
-    puts "Currently serving #{now}"
+    puts "Currently serving #{now}."
   end
 end
