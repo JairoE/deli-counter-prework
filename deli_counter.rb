@@ -1,7 +1,7 @@
 katz_deli = []
 
-def line(katz) 
-  if katz.size == 0 
+def line(katz)
+  if katz.size == 0
     return "The line is currently empty."
   else
     linee = "The line is currently: "
@@ -21,7 +21,7 @@ def take_a_number(katz, name)
 end
 
 def now_serving(katz)
-  if katz.size == 0 
+  if katz.size == 0
     puts "There is nobody waiting to be served!"
   else
     now = katz.shift
@@ -29,5 +29,5 @@ def now_serving(katz)
   end
 end
 
-  
+
       
